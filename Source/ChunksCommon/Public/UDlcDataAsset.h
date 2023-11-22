@@ -6,6 +6,7 @@
 #include "Engine/DataAsset.h"
 #include "UDlcDataAsset.generated.h"
 
+/* This might need BlueprintType */
 USTRUCT()
 struct FDlcInfo {
     GENERATED_BODY()
@@ -27,10 +28,10 @@ struct FDlcInfo {
 };
 
 
-UCLASS()
+UCLASS(BlueprintType)
 class UDlcDataAsset : public UDataAsset {
     GENERATED_BODY()
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "DLC")
     TArray<FDlcInfo> AssetItems;
 };
