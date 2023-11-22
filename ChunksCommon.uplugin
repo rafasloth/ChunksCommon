@@ -3,7 +3,7 @@
 	"Version": 1,
 	"VersionName": "1.0",
 	"FriendlyName": "ChunksCommon",
-	"Description": "Common files for Chunk Downloader base game dependant DLC",
+	"Description": "Common files between Chunks Base Project and External Projects that are meant to build DLC for it",
 	"Category": "Other",
 	"CreatedBy": "Rafasloth",
 	"CreatedByURL": "https://linktr.ee/RafaSloth",
@@ -13,5 +13,12 @@
 	"CanContainContent": true,
 	"IsBetaVersion": true,
 	"IsExperimentalVersion": false,
-	"Installed": false
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "ChunksCommon",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
 }
