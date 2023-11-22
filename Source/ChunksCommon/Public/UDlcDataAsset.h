@@ -6,24 +6,24 @@
 #include "Engine/DataAsset.h"
 #include "UDlcDataAsset.generated.h"
 
-/* This might need BlueprintType */
-USTRUCT()
+
+USTRUCT(BlueprintType)
 struct FDlcInfo {
     GENERATED_BODY()
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadOnly)
     FString AssetName;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadOnly)
     FString AssetType = "Level";
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadOnly)
     UTexture2D* AssetThumbnail;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadOnly)
     FString MountPoint;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadOnly)
     FString LevelName = "Init";
 };
 
