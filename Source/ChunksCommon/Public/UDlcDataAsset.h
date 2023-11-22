@@ -32,6 +32,8 @@ UCLASS(BlueprintType)
 class UDlcDataAsset : public UDataAsset {
     GENERATED_BODY()
 
+public:
+
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "DLC")
     TArray<FDlcInfo> AssetItems;
 };
