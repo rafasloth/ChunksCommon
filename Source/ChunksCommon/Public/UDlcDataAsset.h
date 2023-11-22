@@ -14,6 +14,9 @@ struct FDlcInfo {
     FString AssetName;
 
     UPROPERTY(EditAnywhere)
+    FString AssetType = "Level";
+
+    UPROPERTY(EditAnywhere)
     UTexture2D* AssetThumbnail;
 
     UPROPERTY(EditAnywhere)
