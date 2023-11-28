@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
+#include "Engine/Texture2D.h"
 #include "UDlcDataAsset.generated.h"
 
 
@@ -17,8 +18,8 @@ struct FDlcInfo {
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "DLC")
     FString AssetType = "Level";
 
-    /*UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "DLC")
-    UTexture2D* AssetThumbnail;*/
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "DLC")
+    UTexture2D* AssetThumbnail;
 
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "DLC")
     FString MountPoint;
