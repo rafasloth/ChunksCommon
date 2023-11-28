@@ -26,6 +26,9 @@ struct FDlcInfo {
 
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "DLC")
     FString LevelName = "Init";
+
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "DLC")
+    FString Description = "DLC Description goes here";
 };
 
 
