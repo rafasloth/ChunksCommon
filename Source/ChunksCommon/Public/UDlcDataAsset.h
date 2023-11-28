@@ -29,7 +29,7 @@ struct FDlcInfo {
 
 
 UCLASS(BlueprintType)
-class UDlcDataAsset : public UDataAsset {
+class CHUNKSCOMMON_API UDlcDataAsset : public UDataAsset {
     GENERATED_BODY()
 
 public:
